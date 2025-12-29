@@ -1,3 +1,9 @@
+## 🎬 Demo
+
+[![Watch the demo on YouTube:]](https://youtu.be/RqlTGsb4JtA)
+
+---
+
 ### Key Design Decisions
 
 - **Durable Objects** provide isolated, per-user state and memory.
@@ -17,8 +23,6 @@
 - **WebSockets** enable real-time, streaming-style interaction.
 - **Workers AI** runs LLM inference close to users, reducing latency.
 - **Short-term memory** is kept small for efficiency, mirroring production LLM systems.
-
----
 
 ## 🧰 Tech Stack
 
@@ -110,3 +114,5 @@ Send a user message payload:
 - Streaming token responses
 - Authentication and rate limiting
 - Multi-conversation chat sessions
+
+---
