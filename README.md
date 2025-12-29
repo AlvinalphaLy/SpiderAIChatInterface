@@ -89,7 +89,7 @@ npm run dev
 
 Open the app in your browser (Vite default):
 
-http://localhost:5173
+http://localhost:8080
 
 🧪 Example WebSocket Test
 
