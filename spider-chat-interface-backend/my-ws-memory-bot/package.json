@@ -1,0 +1,19 @@
+{
+	"name": "my-ws-memory-bot",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev",
+		"cf-typegen": "wrangler types"
+	},
+	"devDependencies": {
+		"typescript": "^5.5.2",
+		"wrangler": "^4.56.0"
+	},
+	"dependencies": {
+		"agents": "^0.3.0",
+		"ai": "^6.0.3"
+	}
+}
