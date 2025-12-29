@@ -2,6 +2,8 @@
 
 [![Watch the demo on YouTube:]](https://youtu.be/RqlTGsb4JtA)
 
+Watch the demo on YouTube: https://youtu.be/RqlTGsb4JtA
+
 ---
 
 ### Key Design Decisions
