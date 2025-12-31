@@ -6,6 +6,8 @@ Watch the demo on YouTube: https://youtu.be/RqlTGsb4JtA
 
 ---
 
+SpiderBot AI — a real-time AI agent chat platform using Cloudflare Workers AI, Durable Objects, and WebSockets.
+
 ### Key Design Decisions
 
 - **Durable Objects** provide isolated, per-user state and memory.
