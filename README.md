@@ -10,23 +10,27 @@ SpiderBot AI — a real-time AI agent chat platform using Cloudflare Workers AI,
 
 ### Key Design Decisions
 
-- **Durable Objects** provide isolated, per-user state and memory.
-- **WebSockets** enable real-time, streaming-style interaction.
-- **Workers AI** runs LLM inference close to users, reducing latency.
-- **Short-term memory** is kept small for efficiency, mirroring production LLM systems.
+## Why Cloudflare
+
+This project was intentionally built on Cloudflare to leverage features that are difficult to replicate with traditional serverless platforms.
+
+- **Workers** enable low-latency execution close to users without managing servers.
+- **Durable Objects** provide strongly consistent, per-user state, making them ideal for AI agents with conversational memory.
+- **Workers AI** allows LLM inference at the edge without managing API keys or external model providers.
+- **WebSocket support** in Workers enables real-time, bidirectional communication in a serverless environment.
+
+These primitives together enable a real-time, stateful AI agent architecture that aligns closely with Cloudflare’s edge-first design philosophy.
 
 ---
 
-## 🧰 Tech Stack
+Each user is routed to a dedicated Durable Object instance, which acts as a stateful AI agent.
+This ensures strong consistency for conversational memory while allowing horizontal scaling across users.
 
-### Frontend
+## Cost & Usage Notes
 
-### Key Design Decisions
-
-- **Durable Objects** provide isolated, per-user state and memory.
-- **WebSockets** enable real-time, streaming-style interaction.
-- **Workers AI** runs LLM inference close to users, reducing latency.
-- **Short-term memory** is kept small for efficiency, mirroring production LLM systems.
+- Workers AI calls are executed remotely and may incur usage costs.
+- Conversation history is intentionally trimmed to control token usage.
+- The project avoids unrestricted model access and does not grant the LLM direct internet access.
 
 ## 🧰 Tech Stack
 
